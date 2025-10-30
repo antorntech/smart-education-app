@@ -4,7 +4,7 @@ import { faBell, faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = ({ toggleSidebar }) => {
   return (
-    <header className="fixed top-0 left-0 right-0 h-16 bg-white shadow-sm z-40 flex justify-between items-center px-4 md:px-6">
+    <header className="fixed top-0 left-0 right-0 h-16 bg-white z-40 flex justify-between items-center px-4 md:px-6">
       {/* Hamburger for mobile */}
       <button
         className="md:hidden p-2 text-gray-600 hover:text-indigo-600"
@@ -13,12 +13,10 @@ const Header = ({ toggleSidebar }) => {
         <FontAwesomeIcon icon={faBars} />
       </button>
 
-      <h2 className="text-xl font-semibold text-gray-800">
-        Smart Education Dashboard
-      </h2>
+      <h2 className="text-2xl font-bold text-indigo-800">SmartEdu</h2>
 
       <button className="p-2 text-gray-600 hover:text-indigo-600">
-        <FontAwesomeIcon icon={faBell} />
+        <FontAwesomeIcon icon={faBell} className="text-2xl" />
       </button>
     </header>
   );

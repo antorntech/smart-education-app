@@ -16,7 +16,6 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
     { path: "/", label: "Dashboard", icon: faHome },
     { path: "/routine", label: "Study Routine", icon: faBookOpen },
     { path: "/progress", label: "Progress", icon: faChartLine },
-    { path: "/settings", label: "Settings", icon: faCog },
   ];
 
   return (
